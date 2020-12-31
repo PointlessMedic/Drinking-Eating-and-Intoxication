@@ -1,0 +1,9 @@
+!sober tembed set_cc(intoxication, 0)
+-title "<name> sobers up after a long night of drinking!"
+-f "Intoxication|{intoxication}/7"
+
+!alias aa embed
+{{delete_cc("Intoxication")}}
+-title "Intoxication counters removed."
+
+{{delete_cc("Intoxication") and delete_cc("Drunkeness") if "&1&"=="end"}}
